@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'notifications',
-                    url: 'https://github.com/ThanawinW/DO400-apps.git'
-            } 
+                git branch: 'notifications',url: 'https://github.com/ThanawinW/DO400-apps.git'
+            }
         }
         stage('Test') {
             steps {
