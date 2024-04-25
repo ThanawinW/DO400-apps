@@ -4,7 +4,8 @@ pipeline{
         stage('Deploy') {
             steps {
                 sh '''
-                    oc project pceqzg-deploy-strategies oc start-build greeting-service --follow --wait
+                    oc project pceqzg-deploy-strategies 
+                    oc start-build greeting-service --follow --wait
                 ''' 
             }
         }
